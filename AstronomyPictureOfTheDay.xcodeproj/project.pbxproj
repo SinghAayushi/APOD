@@ -1,0 +1,669 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E5092EE2282E695C008A17AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5092EE1282E695C008A17AE /* AppDelegate.swift */; };
+		E5092EE4282E695C008A17AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5092EE3282E695C008A17AE /* SceneDelegate.swift */; };
+		E5092EE6282E695C008A17AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5092EE5282E695C008A17AE /* ViewController.swift */; };
+		E5092EE9282E695C008A17AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5092EE7282E695C008A17AE /* Main.storyboard */; };
+		E5092EEB282E696B008A17AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5092EEA282E696B008A17AE /* Assets.xcassets */; };
+		E5092EEE282E696B008A17AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5092EEC282E696B008A17AE /* LaunchScreen.storyboard */; };
+		E5092EF9282E696B008A17AE /* AstronomyPictureOfTheDayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5092EF8282E696B008A17AE /* AstronomyPictureOfTheDayTests.swift */; };
+		E5092F03282E696B008A17AE /* AstronomyPictureOfTheDayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5092F02282E696B008A17AE /* AstronomyPictureOfTheDayUITests.swift */; };
+		E5092F05282E696B008A17AE /* AstronomyPictureOfTheDayUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5092F04282E696B008A17AE /* AstronomyPictureOfTheDayUITestsLaunchTests.swift */; };
+		E5092F17282E6EE2008A17AE /* APODDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5092F16282E6EE2008A17AE /* APODDataModel.swift */; };
+		E5092F1B282E7327008A17AE /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5092F1A282E7327008A17AE /* Observable.swift */; };
+		E5092F1D282E76BD008A17AE /* ApodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5092F1C282E76BD008A17AE /* ApodViewModel.swift */; };
+		E5092F1F282EACDE008A17AE /* NetworkManager+RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5092F1E282EACDE008A17AE /* NetworkManager+RequestBuilder.swift */; };
+		E5092F21282EACF9008A17AE /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5092F20282EACF9008A17AE /* NetworkManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E5092EF5282E696B008A17AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5092ED6282E695C008A17AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5092EDD282E695C008A17AE;
+			remoteInfo = AstronomyPictureOfTheDay;
+		};
+		E5092EFF282E696B008A17AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5092ED6282E695C008A17AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5092EDD282E695C008A17AE;
+			remoteInfo = AstronomyPictureOfTheDay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E5092EDE282E695C008A17AE /* AstronomyPictureOfTheDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AstronomyPictureOfTheDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5092EE1282E695C008A17AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E5092EE3282E695C008A17AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E5092EE5282E695C008A17AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E5092EE8282E695C008A17AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E5092EEA282E696B008A17AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E5092EED282E696B008A17AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E5092EEF282E696B008A17AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5092EF4282E696B008A17AE /* AstronomyPictureOfTheDayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AstronomyPictureOfTheDayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5092EF8282E696B008A17AE /* AstronomyPictureOfTheDayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyPictureOfTheDayTests.swift; sourceTree = "<group>"; };
+		E5092EFE282E696B008A17AE /* AstronomyPictureOfTheDayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AstronomyPictureOfTheDayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5092F02282E696B008A17AE /* AstronomyPictureOfTheDayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyPictureOfTheDayUITests.swift; sourceTree = "<group>"; };
+		E5092F04282E696B008A17AE /* AstronomyPictureOfTheDayUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyPictureOfTheDayUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E5092F16282E6EE2008A17AE /* APODDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODDataModel.swift; sourceTree = "<group>"; };
+		E5092F1A282E7327008A17AE /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		E5092F1C282E76BD008A17AE /* ApodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodViewModel.swift; sourceTree = "<group>"; };
+		E5092F1E282EACDE008A17AE /* NetworkManager+RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkManager+RequestBuilder.swift"; sourceTree = "<group>"; };
+		E5092F20282EACF9008A17AE /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E5092EDB282E695C008A17AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5092EF1282E696B008A17AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5092EFB282E696B008A17AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E5092ED5282E695C008A17AE = {
+			isa = PBXGroup;
+			children = (
+				E5092EE0282E695C008A17AE /* AstronomyPictureOfTheDay */,
+				E5092EF7282E696B008A17AE /* AstronomyPictureOfTheDayTests */,
+				E5092F01282E696B008A17AE /* AstronomyPictureOfTheDayUITests */,
+				E5092EDF282E695C008A17AE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E5092EDF282E695C008A17AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E5092EDE282E695C008A17AE /* AstronomyPictureOfTheDay.app */,
+				E5092EF4282E696B008A17AE /* AstronomyPictureOfTheDayTests.xctest */,
+				E5092EFE282E696B008A17AE /* AstronomyPictureOfTheDayUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E5092EE0282E695C008A17AE /* AstronomyPictureOfTheDay */ = {
+			isa = PBXGroup;
+			children = (
+				E5092F18282E6F1A008A17AE /* Networking */,
+				E5092F15282E6E70008A17AE /* Model */,
+				E5092F14282E6E4C008A17AE /* Util */,
+				E5092F13282E6E39008A17AE /* ViewModel */,
+				E5092F12282E699F008A17AE /* ViewController */,
+				E5092F11282E697A008A17AE /* Views */,
+				E5092EE1282E695C008A17AE /* AppDelegate.swift */,
+				E5092EE3282E695C008A17AE /* SceneDelegate.swift */,
+				E5092EEA282E696B008A17AE /* Assets.xcassets */,
+				E5092EEC282E696B008A17AE /* LaunchScreen.storyboard */,
+				E5092EEF282E696B008A17AE /* Info.plist */,
+			);
+			path = AstronomyPictureOfTheDay;
+			sourceTree = "<group>";
+		};
+		E5092EF7282E696B008A17AE /* AstronomyPictureOfTheDayTests */ = {
+			isa = PBXGroup;
+			children = (
+				E5092EF8282E696B008A17AE /* AstronomyPictureOfTheDayTests.swift */,
+			);
+			path = AstronomyPictureOfTheDayTests;
+			sourceTree = "<group>";
+		};
+		E5092F01282E696B008A17AE /* AstronomyPictureOfTheDayUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E5092F02282E696B008A17AE /* AstronomyPictureOfTheDayUITests.swift */,
+				E5092F04282E696B008A17AE /* AstronomyPictureOfTheDayUITestsLaunchTests.swift */,
+			);
+			path = AstronomyPictureOfTheDayUITests;
+			sourceTree = "<group>";
+		};
+		E5092F11282E697A008A17AE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E5092EE7282E695C008A17AE /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E5092F12282E699F008A17AE /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E5092EE5282E695C008A17AE /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E5092F13282E6E39008A17AE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E5092F1C282E76BD008A17AE /* ApodViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E5092F14282E6E4C008A17AE /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				E5092F1A282E7327008A17AE /* Observable.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		E5092F15282E6E70008A17AE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E5092F16282E6EE2008A17AE /* APODDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E5092F18282E6F1A008A17AE /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				E5092F1E282EACDE008A17AE /* NetworkManager+RequestBuilder.swift */,
+				E5092F20282EACF9008A17AE /* NetworkManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E5092EDD282E695C008A17AE /* AstronomyPictureOfTheDay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5092F08282E696B008A17AE /* Build configuration list for PBXNativeTarget "AstronomyPictureOfTheDay" */;
+			buildPhases = (
+				E5092EDA282E695C008A17AE /* Sources */,
+				E5092EDB282E695C008A17AE /* Frameworks */,
+				E5092EDC282E695C008A17AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AstronomyPictureOfTheDay;
+			productName = AstronomyPictureOfTheDay;
+			productReference = E5092EDE282E695C008A17AE /* AstronomyPictureOfTheDay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E5092EF3282E696B008A17AE /* AstronomyPictureOfTheDayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5092F0B282E696B008A17AE /* Build configuration list for PBXNativeTarget "AstronomyPictureOfTheDayTests" */;
+			buildPhases = (
+				E5092EF0282E696B008A17AE /* Sources */,
+				E5092EF1282E696B008A17AE /* Frameworks */,
+				E5092EF2282E696B008A17AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E5092EF6282E696B008A17AE /* PBXTargetDependency */,
+			);
+			name = AstronomyPictureOfTheDayTests;
+			productName = AstronomyPictureOfTheDayTests;
+			productReference = E5092EF4282E696B008A17AE /* AstronomyPictureOfTheDayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E5092EFD282E696B008A17AE /* AstronomyPictureOfTheDayUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5092F0E282E696B008A17AE /* Build configuration list for PBXNativeTarget "AstronomyPictureOfTheDayUITests" */;
+			buildPhases = (
+				E5092EFA282E696B008A17AE /* Sources */,
+				E5092EFB282E696B008A17AE /* Frameworks */,
+				E5092EFC282E696B008A17AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E5092F00282E696B008A17AE /* PBXTargetDependency */,
+			);
+			name = AstronomyPictureOfTheDayUITests;
+			productName = AstronomyPictureOfTheDayUITests;
+			productReference = E5092EFE282E696B008A17AE /* AstronomyPictureOfTheDayUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E5092ED6282E695C008A17AE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					E5092EDD282E695C008A17AE = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					E5092EF3282E696B008A17AE = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = E5092EDD282E695C008A17AE;
+					};
+					E5092EFD282E696B008A17AE = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = E5092EDD282E695C008A17AE;
+					};
+				};
+			};
+			buildConfigurationList = E5092ED9282E695C008A17AE /* Build configuration list for PBXProject "AstronomyPictureOfTheDay" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E5092ED5282E695C008A17AE;
+			productRefGroup = E5092EDF282E695C008A17AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E5092EDD282E695C008A17AE /* AstronomyPictureOfTheDay */,
+				E5092EF3282E696B008A17AE /* AstronomyPictureOfTheDayTests */,
+				E5092EFD282E696B008A17AE /* AstronomyPictureOfTheDayUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E5092EDC282E695C008A17AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5092EEE282E696B008A17AE /* LaunchScreen.storyboard in Resources */,
+				E5092EEB282E696B008A17AE /* Assets.xcassets in Resources */,
+				E5092EE9282E695C008A17AE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5092EF2282E696B008A17AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5092EFC282E696B008A17AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E5092EDA282E695C008A17AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5092EE6282E695C008A17AE /* ViewController.swift in Sources */,
+				E5092F1B282E7327008A17AE /* Observable.swift in Sources */,
+				E5092F17282E6EE2008A17AE /* APODDataModel.swift in Sources */,
+				E5092EE2282E695C008A17AE /* AppDelegate.swift in Sources */,
+				E5092F21282EACF9008A17AE /* NetworkManager.swift in Sources */,
+				E5092F1D282E76BD008A17AE /* ApodViewModel.swift in Sources */,
+				E5092F1F282EACDE008A17AE /* NetworkManager+RequestBuilder.swift in Sources */,
+				E5092EE4282E695C008A17AE /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5092EF0282E696B008A17AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5092EF9282E696B008A17AE /* AstronomyPictureOfTheDayTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5092EFA282E696B008A17AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5092F05282E696B008A17AE /* AstronomyPictureOfTheDayUITestsLaunchTests.swift in Sources */,
+				E5092F03282E696B008A17AE /* AstronomyPictureOfTheDayUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E5092EF6282E696B008A17AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E5092EDD282E695C008A17AE /* AstronomyPictureOfTheDay */;
+			targetProxy = E5092EF5282E696B008A17AE /* PBXContainerItemProxy */;
+		};
+		E5092F00282E696B008A17AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E5092EDD282E695C008A17AE /* AstronomyPictureOfTheDay */;
+			targetProxy = E5092EFF282E696B008A17AE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E5092EE7282E695C008A17AE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E5092EE8282E695C008A17AE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E5092EEC282E696B008A17AE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E5092EED282E696B008A17AE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E5092F06282E696B008A17AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E5092F07282E696B008A17AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E5092F09282E696B008A17AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AstronomyPictureOfTheDay/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sample.aayushi.AstronomyPictureOfTheDay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E5092F0A282E696B008A17AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AstronomyPictureOfTheDay/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sample.aayushi.AstronomyPictureOfTheDay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E5092F0C282E696B008A17AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sample.aayushi.AstronomyPictureOfTheDayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AstronomyPictureOfTheDay.app/AstronomyPictureOfTheDay";
+			};
+			name = Debug;
+		};
+		E5092F0D282E696B008A17AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sample.aayushi.AstronomyPictureOfTheDayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AstronomyPictureOfTheDay.app/AstronomyPictureOfTheDay";
+			};
+			name = Release;
+		};
+		E5092F0F282E696B008A17AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sample.aayushi.AstronomyPictureOfTheDayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AstronomyPictureOfTheDay;
+			};
+			name = Debug;
+		};
+		E5092F10282E696B008A17AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sample.aayushi.AstronomyPictureOfTheDayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AstronomyPictureOfTheDay;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E5092ED9282E695C008A17AE /* Build configuration list for PBXProject "AstronomyPictureOfTheDay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5092F06282E696B008A17AE /* Debug */,
+				E5092F07282E696B008A17AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5092F08282E696B008A17AE /* Build configuration list for PBXNativeTarget "AstronomyPictureOfTheDay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5092F09282E696B008A17AE /* Debug */,
+				E5092F0A282E696B008A17AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5092F0B282E696B008A17AE /* Build configuration list for PBXNativeTarget "AstronomyPictureOfTheDayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5092F0C282E696B008A17AE /* Debug */,
+				E5092F0D282E696B008A17AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5092F0E282E696B008A17AE /* Build configuration list for PBXNativeTarget "AstronomyPictureOfTheDayUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5092F0F282E696B008A17AE /* Debug */,
+				E5092F10282E696B008A17AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E5092ED6282E695C008A17AE /* Project object */;
+}

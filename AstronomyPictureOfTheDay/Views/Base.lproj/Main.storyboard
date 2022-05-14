@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AstronomyPictureOfTheDay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ebf-CN-6Vf">
+                                <rect key="frame" x="0.0" y="3" width="414" height="893"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IZo-hH-LOi" userLabel="ContentView">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="527.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tUd-iM-gxb">
+                                                <rect key="frame" x="20" y="85" width="374" height="250"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="250" id="pzR-GM-4GH"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="                                                    " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h14-YL-KTK" userLabel="Heading">
+                                                <rect key="frame" x="20" y="355" width="374" height="21.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Astronomy picture of the day is loading..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ODV-CR-cOs" userLabel="Description">
+                                                <rect key="frame" x="20" y="396.5" width="374" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="2022-02-08" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a8u-Ia-fAh">
+                                                <rect key="frame" x="20" y="30" width="374" height="35"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="r4k-rH-L9x"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="1VE-wA-eZX">
+                                                <rect key="frame" x="188.5" y="191.5" width="37" height="37"/>
+                                            </activityIndicatorView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="ODV-CR-cOs" firstAttribute="leading" secondItem="IZo-hH-LOi" secondAttribute="leading" constant="20" id="28Y-qQ-bF4"/>
+                                            <constraint firstItem="h14-YL-KTK" firstAttribute="leading" secondItem="IZo-hH-LOi" secondAttribute="leading" constant="20" id="49A-hM-KPj"/>
+                                            <constraint firstItem="1VE-wA-eZX" firstAttribute="centerY" secondItem="tUd-iM-gxb" secondAttribute="centerY" id="6uh-oM-egx"/>
+                                            <constraint firstAttribute="trailing" secondItem="ODV-CR-cOs" secondAttribute="trailing" constant="20" id="92J-qi-B46"/>
+                                            <constraint firstItem="a8u-Ia-fAh" firstAttribute="leading" secondItem="IZo-hH-LOi" secondAttribute="leading" constant="20" id="Cms-kl-66B"/>
+                                            <constraint firstAttribute="bottom" secondItem="ODV-CR-cOs" secondAttribute="bottom" constant="110.5" id="ErL-HW-R6j"/>
+                                            <constraint firstItem="tUd-iM-gxb" firstAttribute="leading" secondItem="IZo-hH-LOi" secondAttribute="leading" constant="20" id="FY8-xt-OJk"/>
+                                            <constraint firstAttribute="trailing" secondItem="a8u-Ia-fAh" secondAttribute="trailing" constant="20" id="HyS-Ge-dQP"/>
+                                            <constraint firstItem="1VE-wA-eZX" firstAttribute="centerX" secondItem="tUd-iM-gxb" secondAttribute="centerX" id="IJ6-PG-ksE"/>
+                                            <constraint firstItem="tUd-iM-gxb" firstAttribute="top" secondItem="a8u-Ia-fAh" secondAttribute="bottom" constant="20" id="P1d-rI-NZV"/>
+                                            <constraint firstItem="a8u-Ia-fAh" firstAttribute="top" secondItem="IZo-hH-LOi" secondAttribute="top" constant="30" id="P2k-6W-Fne"/>
+                                            <constraint firstItem="ODV-CR-cOs" firstAttribute="top" secondItem="h14-YL-KTK" secondAttribute="bottom" constant="20" id="P8a-hj-URQ"/>
+                                            <constraint firstItem="h14-YL-KTK" firstAttribute="top" secondItem="tUd-iM-gxb" secondAttribute="bottom" constant="20" id="R7n-uA-Hsa"/>
+                                            <constraint firstItem="h14-YL-KTK" firstAttribute="top" secondItem="tUd-iM-gxb" secondAttribute="bottom" constant="20" id="YFA-zd-A3P"/>
+                                            <constraint firstAttribute="trailing" secondItem="h14-YL-KTK" secondAttribute="trailing" constant="20" id="onI-8c-PYT"/>
+                                            <constraint firstAttribute="trailing" secondItem="tUd-iM-gxb" secondAttribute="trailing" constant="20" id="w2L-gG-fTd"/>
+                                            <constraint firstItem="ODV-CR-cOs" firstAttribute="top" secondItem="h14-YL-KTK" secondAttribute="bottom" constant="20" id="ych-fz-LCX"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="IZo-hH-LOi" firstAttribute="width" secondItem="Ebf-CN-6Vf" secondAttribute="width" id="9Ip-wW-NTm"/>
+                                    <constraint firstAttribute="bottom" secondItem="IZo-hH-LOi" secondAttribute="bottom" id="Wyj-wQ-hFN"/>
+                                    <constraint firstAttribute="trailing" secondItem="IZo-hH-LOi" secondAttribute="trailing" id="Xww-q3-MeG"/>
+                                    <constraint firstItem="IZo-hH-LOi" firstAttribute="height" secondItem="Ebf-CN-6Vf" secondAttribute="height" priority="250" id="aUe-1y-9wO"/>
+                                    <constraint firstItem="IZo-hH-LOi" firstAttribute="leading" secondItem="Ebf-CN-6Vf" secondAttribute="leading" id="dkY-ty-NgV"/>
+                                    <constraint firstItem="IZo-hH-LOi" firstAttribute="top" secondItem="Ebf-CN-6Vf" secondAttribute="top" id="o0J-mO-bfk"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ebf-CN-6Vf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="13q-VR-VWC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ebf-CN-6Vf" secondAttribute="trailing" id="IJK-G4-chD"/>
+                            <constraint firstItem="Ebf-CN-6Vf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="3" id="d2H-BW-qJ9"/>
+                            <constraint firstAttribute="bottom" secondItem="Ebf-CN-6Vf" secondAttribute="bottom" id="yhM-Oz-ehv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionTextView" destination="ODV-CR-cOs" id="Wsp-kf-QeE"/>
+                        <outlet property="headingTextField" destination="a8u-Ia-fAh" id="LHJ-e2-TiI"/>
+                        <outlet property="loadingIndicator" destination="1VE-wA-eZX" id="EVT-Qb-Fib"/>
+                        <outlet property="podImageView" destination="tUd-iM-gxb" id="3Q2-65-AvM"/>
+                        <outlet property="titleTextView" destination="h14-YL-KTK" id="iNd-aJ-cax"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-478" y="161"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
