@@ -32,10 +32,6 @@ class ViewController: UIViewController {
         }
         
         fetchDataAndUpdateUI()
-        
-        sleep(20)
-        
-        fetchDataAndUpdateUI()
 
     }
     
